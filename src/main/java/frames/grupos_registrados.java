@@ -87,28 +87,28 @@ public class grupos_registrados extends javax.swing.JFrame {
         box_cursos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un curso" }));
 
         btn_editar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_editar_grupo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_editar.png")); // NOI18N
+        btn_editar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
         btn_editar_grupo.setText("Editar");
         btn_editar_grupo.setBorder(null);
         btn_editar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_editar_grupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         btn_agregar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_agregar_grupo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_agregar_small.png")); // NOI18N
+        btn_agregar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_agregar_small.png"))); // NOI18N
         btn_agregar_grupo.setText("Registrar");
         btn_agregar_grupo.setBorder(null);
         btn_agregar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_agregar_grupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         btn_regresar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_regresar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_regresar_small.png")); // NOI18N
+        btn_regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_regresar_small.png"))); // NOI18N
         btn_regresar.setText("Regresar");
         btn_regresar.setBorder(null);
         btn_regresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_regresar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         btn_consultar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_consultar_grupo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_consultar_small.png")); // NOI18N
+        btn_consultar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_consultar_small.png"))); // NOI18N
         btn_consultar_grupo.setText("Consultar");
         btn_consultar_grupo.setBorder(null);
         btn_consultar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
