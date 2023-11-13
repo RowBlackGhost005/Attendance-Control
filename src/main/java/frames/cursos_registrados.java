@@ -75,7 +75,7 @@ public class cursos_registrados extends javax.swing.JFrame {
         jLabel1.setText("Cursos Registrados");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_agregar_small.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_agregar_small.png"))); // NOI18N
         jButton1.setText("Registrar");
         jButton1.setBorder(null);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -87,21 +87,21 @@ public class cursos_registrados extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_editar.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
         jButton2.setText("Editar");
         jButton2.setBorder(null);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_eliminar_small.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
         jButton3.setText("Eliminar");
         jButton3.setBorder(null);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_regresar_small.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_regresar_small.png"))); // NOI18N
         jButton4.setText("Regresar");
         jButton4.setBorder(null);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
