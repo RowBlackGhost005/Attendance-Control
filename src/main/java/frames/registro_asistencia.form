@@ -168,7 +168,7 @@
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Kevin Rios\Desktop\Metodologias Agiles\Proyecto Agiles\Attendance-Control\src\main\java\img\icono_excel.png"/>
+              <Image iconType="3" name="/img/icono_excel.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Importar CSV"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -195,7 +195,7 @@
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Kevin Rios\Desktop\Metodologias Agiles\Proyecto Agiles\Attendance-Control\src\main\java\img\icono_guardar.png"/>
+              <Image iconType="3" name="/img/icono_guardar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Guardar"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -211,7 +211,7 @@
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Kevin Rios\Desktop\Metodologias Agiles\Proyecto Agiles\Attendance-Control\src\main\java\img\icono_regresar.png"/>
+              <Image iconType="3" name="/img/icono_regresar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Regresar"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">

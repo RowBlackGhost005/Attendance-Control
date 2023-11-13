@@ -81,7 +81,7 @@ public class registro_asistencia extends javax.swing.JFrame {
         }
 
         btn_importar_csv.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_importar_csv.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_excel.png")); // NOI18N
+        btn_importar_csv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_excel.png"))); // NOI18N
         btn_importar_csv.setText("Importar CSV");
         btn_importar_csv.setBorder(null);
         btn_importar_csv.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -96,14 +96,14 @@ public class registro_asistencia extends javax.swing.JFrame {
         jLabel1.setText("Control de Asistencia");
 
         btn_guardar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_guardar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_guardar.png")); // NOI18N
+        btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_guardar.png"))); // NOI18N
         btn_guardar.setText("Guardar");
         btn_guardar.setBorder(null);
         btn_guardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_guardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         btn_cancelar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_cancelar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kevin Rios\\Desktop\\Metodologias Agiles\\Proyecto Agiles\\Attendance-Control\\src\\main\\java\\img\\icono_regresar.png")); // NOI18N
+        btn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_regresar.png"))); // NOI18N
         btn_cancelar.setText("Regresar");
         btn_cancelar.setBorder(null);
         btn_cancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
