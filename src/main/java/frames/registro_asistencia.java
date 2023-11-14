@@ -1,10 +1,13 @@
 package frames;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JMenuItem;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author Kevin Rios
@@ -16,6 +19,7 @@ public class registro_asistencia extends javax.swing.JFrame {
      */
     public registro_asistencia() {
         initComponents();
+        inicializarMenu();
     }
 
     /**
@@ -27,6 +31,7 @@ public class registro_asistencia extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ppMenuAsistencia = new javax.swing.JPopupMenu();
         panel_principal = new javax.swing.JPanel();
         panel_tabla = new javax.swing.JScrollPane();
         tabla_asistencia = new javax.swing.JTable();
@@ -246,8 +251,48 @@ public class registro_asistencia extends javax.swing.JFrame {
     private javax.swing.JLabel lblNombre_grupo;
     private javax.swing.JPanel panel_principal;
     private javax.swing.JScrollPane panel_tabla;
+    private javax.swing.JPopupMenu ppMenuAsistencia;
     private javax.swing.JTable tabla_asistencia;
     private javax.swing.JTextField txtNombre_curso;
     private javax.swing.JTextField txtNombre_grupo;
     // End of variables declaration//GEN-END:variables
+
+    private void inicializarMenu() {
+
+        JMenuItem asistencia = new JMenuItem("Asistencia");
+        JMenuItem retardo = new JMenuItem("Retardo");
+        JMenuItem falta = new JMenuItem("Falta");
+
+        ppMenuAsistencia.add(asistencia);
+        ppMenuAsistencia.addSeparator();
+        ppMenuAsistencia.add(retardo);
+        ppMenuAsistencia.addSeparator();
+
+        ppMenuAsistencia.add(falta);
+
+        tabla_asistencia.setComponentPopupMenu(ppMenuAsistencia);
+
+        //TODO 
+        asistencia.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            }
+        });
+
+        retardo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            }
+        });
+
+        falta.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            }
+        });
+
+    }
 }
