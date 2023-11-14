@@ -1,6 +1,9 @@
 package pruebas;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.fail;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -11,11 +14,16 @@ public class TestCSV {
     public void testCargarCSV() {
         CSVLoader loader = new CSVLoader();
         try {
-            List<String[]> datos = loader.cargarCSV("C:\\Users\\felip\\OneDrive\\Escritorio\\Proyecto Final\\archivo.csv");
+            
+            String filePath = "archivo.csv";
+            List<String[]> datos = loader.cargarCSV(filePath);
+            
             assertNotNull(datos);
-            assertEquals(3, datos.size()); // Ajusta este valor según la cantidad de filas en tu archivo CSV
+            assertEquals(3, datos.size()); 
         } catch (Exception e) {
             fail("Excepción inesperada: " + e.getMessage());
         }
     }
 }
+
+
