@@ -36,6 +36,9 @@ public class SubirCSV extends javax.swing.JFrame {
      * 
      * @param File Archivo donde se guardará el archivo arrastrado
      */
+    public SubirCSV() {
+       initComponents();
+    }
     public SubirCSV(JFrame padre) {
         initComponents();
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
