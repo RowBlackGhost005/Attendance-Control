@@ -11,12 +11,12 @@ package frames;
  *
  * @author Kevin Rios
  */
-public class grupos_registrados extends javax.swing.JFrame {
+public class gruposRegistrados extends javax.swing.JFrame {
 
     /**
      * Creates new form grupos_registrados
      */
-    public grupos_registrados() {
+    public gruposRegistrados() {
         initComponents();
     }
 
@@ -196,20 +196,21 @@ public class grupos_registrados extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(grupos_registrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(gruposRegistrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(grupos_registrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(gruposRegistrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(grupos_registrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(gruposRegistrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(grupos_registrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(gruposRegistrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new grupos_registrados().setVisible(true);
+                new gruposRegistrados().setVisible(true);
             }
         });
     }
