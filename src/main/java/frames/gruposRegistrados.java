@@ -30,26 +30,26 @@ public class gruposRegistrados extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        lbl_titulo = new javax.swing.JLabel();
+        panelPrincipal = new javax.swing.JPanel();
+        lblTitulo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbl_grupos = new javax.swing.JTable();
-        lblNombre_curso = new javax.swing.JLabel();
-        box_cursos = new javax.swing.JComboBox<>();
-        btn_editar_grupo = new javax.swing.JButton();
-        btn_agregar_grupo = new javax.swing.JButton();
-        btn_regresar = new javax.swing.JButton();
-        btn_consultar_grupo = new javax.swing.JButton();
+        tblGrupos = new javax.swing.JTable();
+        lblNombreCurso = new javax.swing.JLabel();
+        comboCursos = new javax.swing.JComboBox<>();
+        btnEditarGrupo = new javax.swing.JButton();
+        btnAgregarGrupo = new javax.swing.JButton();
+        btnRegresar = new javax.swing.JButton();
+        btnConsultarGrupo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setPreferredSize(new java.awt.Dimension(756, 551));
+        panelPrincipal.setBackground(new java.awt.Color(255, 255, 255));
+        panelPrincipal.setPreferredSize(new java.awt.Dimension(756, 551));
 
-        lbl_titulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbl_titulo.setText("Grupos Registrados");
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblTitulo.setText("Grupos Registrados");
 
-        tbl_grupos.setModel(new javax.swing.table.DefaultTableModel(
+        tblGrupos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -72,91 +72,91 @@ public class gruposRegistrados extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        tbl_grupos.setShowGrid(true);
-        tbl_grupos.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(tbl_grupos);
-        if (tbl_grupos.getColumnModel().getColumnCount() > 0) {
-            tbl_grupos.getColumnModel().getColumn(0).setMinWidth(100);
-            tbl_grupos.getColumnModel().getColumn(0).setMaxWidth(100);
-            tbl_grupos.getColumnModel().getColumn(1).setMinWidth(100);
-            tbl_grupos.getColumnModel().getColumn(1).setMaxWidth(100);
+        tblGrupos.setShowGrid(true);
+        tblGrupos.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tblGrupos);
+        if (tblGrupos.getColumnModel().getColumnCount() > 0) {
+            tblGrupos.getColumnModel().getColumn(0).setMinWidth(100);
+            tblGrupos.getColumnModel().getColumn(0).setMaxWidth(100);
+            tblGrupos.getColumnModel().getColumn(1).setMinWidth(100);
+            tblGrupos.getColumnModel().getColumn(1).setMaxWidth(100);
         }
 
-        lblNombre_curso.setText("Curso:");
+        lblNombreCurso.setText("Curso:");
 
-        box_cursos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un curso" }));
+        comboCursos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un curso" }));
 
-        btn_editar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_editar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
-        btn_editar_grupo.setText("Editar");
-        btn_editar_grupo.setBorder(null);
-        btn_editar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_editar_grupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnEditarGrupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnEditarGrupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconoEditar.png"))); // NOI18N
+        btnEditarGrupo.setText("Editar");
+        btnEditarGrupo.setBorder(null);
+        btnEditarGrupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEditarGrupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        btn_agregar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_agregar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_agregar_small.png"))); // NOI18N
-        btn_agregar_grupo.setText("Registrar");
-        btn_agregar_grupo.setBorder(null);
-        btn_agregar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_agregar_grupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAgregarGrupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAgregarGrupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconoAgregarSmall.png"))); // NOI18N
+        btnAgregarGrupo.setText("Registrar");
+        btnAgregarGrupo.setBorder(null);
+        btnAgregarGrupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAgregarGrupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        btn_regresar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_regresar_small.png"))); // NOI18N
-        btn_regresar.setText("Regresar");
-        btn_regresar.setBorder(null);
-        btn_regresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_regresar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRegresar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconoRegresarSmall.png"))); // NOI18N
+        btnRegresar.setText("Regresar");
+        btnRegresar.setBorder(null);
+        btnRegresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRegresar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        btn_consultar_grupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_consultar_grupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_consultar_small.png"))); // NOI18N
-        btn_consultar_grupo.setText("Consultar");
-        btn_consultar_grupo.setBorder(null);
-        btn_consultar_grupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_consultar_grupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnConsultarGrupo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnConsultarGrupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconoConsultarSmall.png"))); // NOI18N
+        btnConsultarGrupo.setText("Consultar");
+        btnConsultarGrupo.setBorder(null);
+        btnConsultarGrupo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnConsultarGrupo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
+        panelPrincipal.setLayout(panelPrincipalLayout);
+        panelPrincipalLayout.setHorizontalGroup(
+            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPrincipalLayout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn_agregar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addComponent(btnAgregarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btn_editar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnEditarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btn_consultar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblNombre_curso)
+                                .addComponent(btnConsultarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelPrincipalLayout.createSequentialGroup()
+                                .addComponent(lblNombreCurso)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbl_titulo)
-                                    .addComponent(box_cursos, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblTitulo)
+                                    .addComponent(comboCursos, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        panelPrincipalLayout.setVerticalGroup(
+            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPrincipalLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(lbl_titulo)
+                .addComponent(lblTitulo)
                 .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre_curso)
-                    .addComponent(box_cursos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombreCurso)
+                    .addComponent(comboCursos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_agregar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_editar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_consultar_grupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAgregarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEditarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnConsultarGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(7, Short.MAX_VALUE))
         );
 
@@ -165,13 +165,13 @@ public class gruposRegistrados extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 6, Short.MAX_VALUE))
         );
 
@@ -216,16 +216,16 @@ public class gruposRegistrados extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> box_cursos;
-    private javax.swing.JButton btn_agregar_grupo;
-    private javax.swing.JButton btn_consultar_grupo;
-    private javax.swing.JButton btn_editar_grupo;
-    private javax.swing.JButton btn_regresar;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton btnAgregarGrupo;
+    private javax.swing.JButton btnConsultarGrupo;
+    private javax.swing.JButton btnEditarGrupo;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JComboBox<String> comboCursos;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JLabel lblNombre_curso;
-    private javax.swing.JLabel lbl_titulo;
-    private javax.swing.JTable tbl_grupos;
+    private javax.swing.JLabel lblNombreCurso;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JPanel panelPrincipal;
+    private javax.swing.JTable tblGrupos;
     // End of variables declaration//GEN-END:variables
 }
