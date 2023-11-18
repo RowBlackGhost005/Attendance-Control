@@ -1,16 +1,24 @@
 package core;
 
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-
+import gui.SubirCSV;
+import javax.swing.UIManager;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        System.out.println("Hello world!");
+    public static void main(String[] args) {
+        try {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
         
-        popup.PopUpAviso.mostrarAviso("Falla X", "Adevertencia X","src/main/java/img/advertencia.png");
-
-
+        
+        new SubirCSV().setVisible(true);
+        
+        
+        }
     }
-}

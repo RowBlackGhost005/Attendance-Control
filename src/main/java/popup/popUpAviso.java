@@ -15,7 +15,7 @@ import javax.swing.JTextPane;
  *
  * @author giova
  */
-public class PopUpAviso {
+public class popUpAviso {
 
     public static void mostrarAviso(String mensaje, String titulo, String rutaImagen) {
 
