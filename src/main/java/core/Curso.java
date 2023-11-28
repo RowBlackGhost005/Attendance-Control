@@ -5,6 +5,10 @@ public class Curso {
     String nombre;
     grupo grupos[];
     
+    public Curso(String nombre){
+        this.nombre = nombre;
+    }
+    
     public Curso(String nombre, grupo grupos[]){
         this.nombre = nombre;
         this.grupos = grupos;
@@ -25,5 +29,4 @@ public class Curso {
     public void setGrupos(grupo[] grupos) {
         this.grupos = grupos;
     }
-    
 }
