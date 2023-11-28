@@ -3,13 +3,13 @@ package core;
 public class Curso {
 
     String nombre;
-    grupo grupos[];
+    Grupo grupos[];
     
     public Curso(String nombre){
         this.nombre = nombre;
     }
     
-    public Curso(String nombre, grupo grupos[]){
+    public Curso(String nombre, Grupo grupos[]){
         this.nombre = nombre;
         this.grupos = grupos;
     }
@@ -22,11 +22,11 @@ public class Curso {
         this.nombre = nombre;
     }
 
-    public grupo[] getGrupos() {
+    public Grupo[] getGrupos() {
         return grupos;
     }
 
-    public void setGrupos(grupo[] grupos) {
+    public void setGrupos(Grupo[] grupos) {
         this.grupos = grupos;
     }
 }
