@@ -1,5 +1,7 @@
 package gui;
 
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
@@ -113,7 +115,9 @@ public class dlgRegistrarCurso extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        // TODO add your handling code here:
+        if (txtNombreCurso.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Por favor asigne un nombre al curso.");
+        }
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     /**
