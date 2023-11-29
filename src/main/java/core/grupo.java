@@ -1,11 +1,11 @@
 package core;
 
-public class grupo {
+public class Grupo {
     String nombre;
     String nombreDelCurso;
     String[] horario;
     
-    public grupo(String nombre, String nombreDelCurso, String[] horario){
+    public Grupo(String nombre, String nombreDelCurso, String[] horario){
         nombre = this.nombre;
         nombreDelCurso = this.nombreDelCurso;
         horario = this.horario;
