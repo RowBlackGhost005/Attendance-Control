@@ -20,7 +20,7 @@ public class TestCSV {
         CSV cargar = new CSV();
         try {
 
-            String filePath = "archivo.csv";
+            String filePath = "EjemploCSV.csv";
             List<String[]> datos = cargar.cargarCSV(filePath);
 
             assertNotNull(datos);
